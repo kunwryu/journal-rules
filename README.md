@@ -1,5 +1,12 @@
 # journal-rules: 인류학도를 위한 학술지 규정 종합 포털
 
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Site-brightgreen?style=flat-square&logo=github)](https://kunwryu.github.io/journal-rules/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![Accessibility](https://img.shields.io/badge/Accessibility-UDL%202025%20%2B%20WCAG%20AA-009ccf?style=flat-square)](https://kunwryu.github.io/journal-rules/specs.html)
+[![AI Crawler Shield](https://img.shields.io/badge/Crawler%20Shield-16%20AI%20Bots%20Blocked-red?style=flat-square)](https://kunwryu.github.io/journal-rules/)
+[![Standard: KCA & ICCS](https://img.shields.io/badge/Standard-KCA%20%26%20ICCS-8A3B14?style=flat-square)](https://kunwryu.github.io/journal-rules/)
+[![Stack: Vanilla Web](https://img.shields.io/badge/Stack-Vanilla%20Web%20(Zero--Dep)-E34F26?style=flat-square&logo=html5&logoColor=white)](https://kunwryu.github.io/journal-rules/specs.html)
+
 > **사단법인 한국문화인류학회 『한국문화인류학』**과 **서울대학교 비교문화연구소 『비교문화연구』(최신 간행본)**의 공식 간행 규정, 게재 절차, 원고 작성 요령, 연구 윤리 규정을 1:1로 비교 대조하고, 서지 인용 서식을 실시간으로 시뮬레이션할 수 있는 바닐라 웹 표준 기반 무의존성(Zero-Dependency) 학술 정적 웹 포털입니다.
 
 ---

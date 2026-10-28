@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 서지 인용 자동 변환기 & 서식 시뮬레이터 | 인류학 양대 학술지 스타일</title>
+    <meta name="description" content="저서, 논문, 2인 공저, 번역서, 통계자료 등 문헌 유형별 본문 내주와 참고문헌 목록을 양대 학술지 스타일로 실시간 자동 변환 및 복사.">
+    <!-- ============================================================
+         보안 원칙: CRAWLER_SHIELD v2 (16종 AI 학습 봇 차단 & TDM 권리 유보)
+    ============================================================ -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="GPTBot" content="noindex, nofollow" />
+    <meta name="OAI-SearchBot" content="noindex, nofollow" />
+    <meta name="ChatGPT-User" content="noindex, nofollow" />
+    <meta name="ClaudeBot" content="noindex, nofollow" />
+    <meta name="anthropic-ai" content="noindex, nofollow" />
+    <meta name="Claude-Web" content="noindex, nofollow" />
+    <meta name="Google-Extended" content="noindex, nofollow" />
+    <meta name="Googlebot-AI" content="noindex, nofollow" />
+    <meta name="Applebot-Extended" content="noindex, nofollow" />
+    <meta name="Amazonbot" content="noindex, nofollow" />
+    <meta name="Bytespider" content="noindex, nofollow" />
+    <meta name="CCBot" content="noindex, nofollow" />
+    <meta name="meta-externalagent" content="noindex, nofollow" />
+    <meta name="FacebookBot" content="noindex, nofollow" />
+    <meta name="PerplexityBot" content="noindex, nofollow" />
+    <meta name="Cohere-ai" content="noindex, nofollow" />
+    <meta http-equiv="X-Robots-Tag" content="noimageai, noai" />
+    <meta name="tdm-reservation" content="1" />
+    <link rel="stylesheet" href="style.css?v=20261028_3">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">본문 바로가기 (skip to main content)</a>
+
+    <!-- 최상단 헤더 -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="brand-wrapper">
+                <div class="brand-icon-box" aria-hidden="true">🏛️</div>
+                <div class="brand-info">
+                    <div class="brand-badge-row">
+                        <span class="brand-badge">academic portal</span>
+                    </div>
+                    <h1 class="brand-title"><a href="index.html" style="color: inherit; text-decoration: none;">한국 문화인류학 양대 학술지 규정 종합 포털</a></h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- 메인 내비게이션 탭 (MPA 고유 파일 링크) -->
+        <nav class="nav-tab-container" aria-label="포털 주요 기능 탭">
+                        <div class="nav-tab-wrapper" role="tablist">
+                <a href="index.html" class="tab-btn" role="tab" aria-selected="false">
+                    <span>비교 매트릭스</span>
+                </a>
+                <a href="kca.html" class="tab-btn" role="tab" aria-selected="false">
+                    <span>『한국문화인류학』 규정</span>
+                </a>
+                <a href="iccs.html" class="tab-btn" role="tab" aria-selected="false">
+                    <span>『비교문화연구』 규정</span>
+                </a>
+                <a href="converter.html" class="tab-btn active" role="tab" aria-selected="true">
+                    <span>인용 변환기</span>
+                </a>
+                <a href="checklist.html" class="tab-btn" role="tab" aria-selected="false">
+                    <span>체크리스트</span>
+                </a>
+                <a href="specs.html" class="tab-btn" role="tab" aria-selected="false">
+                    <span>제작 환경 &amp; 명세</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 메인 본문 영역 (100% 상시 가시성 보장) -->
+    <main id="main-content" class="page-container" tabindex="-1">
+        <section class="mpa-page-section">
+
+            <article class="academic-card">
+                <header class="academic-card-header">
+                    <div class="card-title-group">
+                        <span class="card-section-badge">live formatting engine</span>
+                        <h2 class="card-h2-title">실시간 서지 인용 자동 변환기 &amp; 서식 시뮬레이터</h2>
+                        <p class="card-sub-rule">인용하고자 하는 문헌 유형을 선택하면, 『한국문화인류학』과 『비교문화연구』 2026 표준 서식으로 즉각 변환하여 차이점을 대조합니다.</p>
+                    </div>
+                </header>
+
+                <div class="converter-container">
+                    <div class="converter-controls">
+                        <div class="form-group">
+                            <label for="converter-preset-select">문헌 프리셋 선택:</label>
+                            <select id="converter-preset-select" class="form-select">
+                                <option value="book_single">일반 저서 (단독 저자)</option>
+                                <option value="journal_article">학술지 수록 논문 (단독 저자)</option>
+                                <option value="two_authors">2인 공동 저술 (국문 / 영문)</option>
+                                <option value="translation_book">번역서 (외국 저자 번역본)</option>
+                                <option value="stat_data">통계 및 공공자료 (&lt;자료&gt; 섹션)</option>
+                                <option value="data_news_magazine">신문 및 잡지 기사 (&lt;자료&gt; 섹션)</option>
+                                <option value="data_internet">인터넷 웹자료 (&lt;자료&gt; 섹션)</option>
+                                <option value="data_law_history">법령 및 공공 사료 (&lt;자료&gt; 섹션)</option>
+                                <option value="proceeding_paper">학술대회 발표논문 (프로시딩)</option>
+                                <option value="thesis_paper">석·박사 학위논문</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 1:1 변환 결과 그리드 -->
+                    <div class="converter-result-grid">
+                        <!-- 한국문화인류학 결과 -->
+                        <div class="converter-box" style="border-top: 4px solid var(--color-secondary);">
+                            <div class="converter-box-title">
+                                <span style="color: var(--color-secondary-dark);">『한국문화인류학』 서식 결과</span>
+                                <button class="copy-btn" data-copy-target="#kca-output-wrapper">📋 서식 전체 복사</button>
+                            </div>
+                            <div id="kca-output-wrapper">
+                                <p style="font-size: 0.8rem; font-weight: 700; color: #64748b; margin-bottom: 4px;">[본문 괄호 내주]</p>
+                                <div id="kca-intext-res" class="converter-output">로딩 중...</div>
+                                <p style="font-size: 0.8rem; font-weight: 700; color: #64748b; margin: 8px 0 4px 0;">[참고문헌 목록]</p>
+                                <div id="kca-ref-res" class="converter-output">로딩 중...</div>
+                            </div>
+                        </div>
+
+                        <!-- 비교문화연구 결과 -->
+                        <div class="converter-box" style="border-top: 4px solid var(--color-primary);">
+                            <div class="converter-box-title">
+                                <span style="color: var(--color-primary);">『비교문화연구』 서식 결과</span>
+                                <button class="copy-btn" data-copy-target="#iccs-output-wrapper">📋 서식 전체 복사</button>
+                            </div>
+                            <div id="iccs-output-wrapper">
+                                <p style="font-size: 0.8rem; font-weight: 700; color: #64748b; margin-bottom: 4px;">[본문 괄호 내주]</p>
+                                <div id="iccs-intext-res" class="converter-output">로딩 중...</div>
+                                <p style="font-size: 0.8rem; font-weight: 700; color: #64748b; margin: 8px 0 4px 0;">[참고문헌 목록]</p>
+                                <div id="iccs-ref-res" class="converter-output">로딩 중...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 세부 서식 차이점 하이라이트 -->
+                    <div class="rule-box gold" style="margin-top: 1.5rem;">
+                        <strong>🔍 이 프리셋에서 주의해야 할 핵심 차이점:</strong>
+                        <pre id="converter-diff-notes" style="margin-top: 8px; font-family: inherit; font-size: 0.92rem; white-space: pre-wrap; color: #1e293b;"></pre>
+                    </div>
+                </div>
+            </article>
+        
+        </section>
+    </main>
+
+    <!-- 플로팅 TOP 버튼 -->
+    <button id="back-to-top" class="floating-top-btn" title="페이지 상단으로 이동" aria-label="페이지 상단으로 이동">↑</button>
+
+    <!-- 푸터 -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>한국 문화인류학 양대 학술지 규정 종합 포털</h3>
+                    <p>『한국문화인류학』(KCA) &amp; 『비교문화연구』(ICCS 2026) 공식 간행·절차·작성·윤리 규정집</p>
+                </div>
+                                <div class="footer-links">
+                    <a href="index.html">비교 매트릭스</a>
+                    <a href="kca.html">『한국문화인류학』 규정</a>
+                    <a href="iccs.html">『비교문화연구』 규정</a>
+                    <a href="converter.html">인용 변환기</a>
+                    <a href="checklist.html">체크리스트</a>
+                    <a href="specs.html">제작 환경 &amp; 명세</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 한국 문화인류학 학술 포털 시스템. all rights reserved.</p>
+                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    <span class="udl-conformance-badge">UDL 2025 framework &amp; WCAG 2.1 AA conformance</span>
+                    <span class="udl-conformance-badge" style="border-color: rgba(184, 74, 57, 0.4); color: var(--color-comp-coral);">🛡️ CRAWLER_SHIELD active (16종 AI 학습 봇 차단)</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 자바스크립트 -->
+    <script src="portal.js?v=20261028_1"></script>
+</body>
+</html>

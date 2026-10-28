@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메타인지 투고 자가진단 체크리스트 | 서식 및 연구윤리 오류 사전 예방</title>
+    <meta name="description" content="투고 전 연구자가 스스로 점검하여 감점 요인과 반송 위험을 사전에 차단하는 메타인지 자가진단 피드백 시스템.">
+    <!-- ============================================================
+         보안 원칙: CRAWLER_SHIELD v2 (16종 AI 학습 봇 차단 & TDM 권리 유보)
+    ============================================================ -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="GPTBot" content="noindex, nofollow" />
+    <meta name="OAI-SearchBot" content="noindex, nofollow" />
+    <meta name="ChatGPT-User" content="noindex, nofollow" />
+    <meta name="ClaudeBot" content="noindex, nofollow" />
+    <meta name="anthropic-ai" content="noindex, nofollow" />
+    <meta name="Claude-Web" content="noindex, nofollow" />
+    <meta name="Google-Extended" content="noindex, nofollow" />
+    <meta name="Googlebot-AI" content="noindex, nofollow" />
+    <meta name="Applebot-Extended" content="noindex, nofollow" />
+    <meta name="Amazonbot" content="noindex, nofollow" />
+    <meta name="Bytespider" content="noindex, nofollow" />
+    <meta name="CCBot" content="noindex, nofollow" />
+    <meta name="meta-externalagent" content="noindex, nofollow" />
+    <meta name="FacebookBot" content="noindex, nofollow" />
+    <meta name="PerplexityBot" content="noindex, nofollow" />
+    <meta name="Cohere-ai" content="noindex, nofollow" />
+    <meta http-equiv="X-Robots-Tag" content="noimageai, noai" />
+    <meta name="tdm-reservation" content="1" />
+    <link rel="stylesheet" href="style.css?v=20261028_3">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">본문 바로가기 (skip to main content)</a>
+
+    <!-- 최상단 헤더 -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="brand-wrapper">
+                <div class="brand-icon-box" aria-hidden="true">🏛️</div>
+                <div class="brand-info">
+                    <div class="brand-badge-row">
+                        <span class="brand-badge">academic portal</span>
+                    </div>
+                    <h1 class="brand-title"><a href="index.html" style="color: inherit; text-decoration: none;">한국 문화인류학 양대 학술지 규정 종합 포털</a></h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- 메인 내비게이션 탭 (MPA 고유 파일 링크) -->
+        <nav class="nav-tab-container" aria-label="포털 주요 기능 탭">
+                        <div class="nav-tab-wrapper" role="tablist">
+                <a href="index.html" class="tab-btn" role="tab" aria-selected="false">
+                    <span>비교 매트릭스</span>
+                </a>
+                <a href="kca.html" class="tab-btn" role="tab" aria-selected="false">
+                    <span>『한국문화인류학』 규정</span>
+                </a>
+                <a href="iccs.html" class="tab-btn" role="tab" aria-selected="false">
+                    <span>『비교문화연구』 규정</span>
+                </a>
+                <a href="converter.html" class="tab-btn" role="tab" aria-selected="false">
+                    <span>인용 변환기</span>
+                </a>
+                <a href="checklist.html" class="tab-btn active" role="tab" aria-selected="true">
+                    <span>체크리스트</span>
+                </a>
+                <a href="specs.html" class="tab-btn" role="tab" aria-selected="false">
+                    <span>제작 환경 &amp; 명세</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 메인 본문 영역 (100% 상시 가시성 보장) -->
+    <main id="main-content" class="page-container" tabindex="-1">
+        <section class="mpa-page-section">
+
+            <article class="academic-card">
+                <header class="academic-card-header">
+                    <div class="card-title-group">
+                        <span class="card-section-badge">metacognitive self-check</span>
+                        <h2 class="card-h2-title">메타인지 투고 자가진단 체크리스트</h2>
+                        <p class="card-sub-rule">투고자가 스스로 자신의 원고를 검증하여 감점 요인을 사전에 제거하는 피드백 루프 시스템입니다. (자동 저장)</p>
+                    </div>
+                    <button id="reset-checklist-btn" class="action-btn" style="background:#f1f5f9; border:1px solid #cbd5e1; border-radius:6px; padding:6px 14px; font-weight:600; font-size:0.85rem;">초기화</button>
+                </header>
+
+                <div class="checklist-container">
+                    <div class="checklist-progress-bar-wrapper">
+                        <div class="progress-header">
+                            <span>자가진단 진행률:</span>
+                            <span id="checklist-progress-count">0 / 10 (0%)</span>
+                        </div>
+                        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                            <div id="checklist-progress-fill" class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="checklist-items">
+                        <!-- 항목 1 -->
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check-1" class="checklist-checkbox">
+                            <label for="check-1" class="checklist-label">
+                                <span class="checklist-item-title">1. 내주 저자명-연도 사이 쉼표 유무 검증</span>
+                                <span class="checklist-item-desc">『한국문화인류학』 투고 시 쉼표 제거 <code>(한문인 1988)</code>, 『비교문화연구』 투고 시 쉼표 필수 삽입 <code>(강윤희, 2004)</code> 여부를 확인하였는가?</span>
+                                <span class="checklist-feedback-chip" style="background:#fee2e2; color:#b91c1c;">⚠️ 최다 반려 요인</span>
+                            </label>
+                        </div>
+
+                        <!-- 항목 2 -->
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check-2" class="checklist-checkbox">
+                            <label for="check-2" class="checklist-label">
+                                <span class="checklist-item-title">2. 인용 쪽수 부호(하이픈 vs 물결표) 확인</span>
+                                <span class="checklist-item-desc">『한국문화인류학』은 하이픈(<code>20-21</code>), 『비교문화연구』는 물결표(<code>40~43</code>)로 일관되게 작성되었는가?</span>
+                                <span class="checklist-feedback-chip" style="background:#fef3c7; color:#92400e;">단골 오류</span>
+                            </label>
+                        </div>
+
+                        <!-- 항목 3 -->
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check-3" class="checklist-checkbox">
+                            <label for="check-3" class="checklist-label">
+                                <span class="checklist-item-title">3. 소제목 계층 번호 체계 일치 확인</span>
+                                <span class="checklist-item-desc">『한국문화인류학』의 4단계가 <code>가.</code>로 되어 있는지, 『비교문화연구』의 4단계가 <code>①</code>로 되어 있는지 확인하였는가?</span>
+                                <span class="checklist-feedback-chip" style="background:#e0e7ff; color:#3730a3;">서식 체계</span>
+                            </label>
+                        </div>
+
+                        <!-- 항목 4 -->
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check-4" class="checklist-checkbox">
+                            <label for="check-4" class="checklist-label">
+                                <span class="checklist-item-title">4. 괄호 속 로마자 외래어 소문자 원칙(편집자 꾸꾸팩) 준수</span>
+                                <span class="checklist-item-desc">고유명사가 아닌 일반 학술어(예: <code>집단주의(groupism)</code>, <code>다지점 민족지(multi-sited ethnography)</code>)가 첫 글자 소문자로 작성되었는가?</span>
+                                <span class="checklist-feedback-chip" style="background:#f0fdf4; color:#166534;">어문 규범</span>
+                            </label>
+                        </div>
+
+                        <!-- 항목 5 -->
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check-5" class="checklist-checkbox">
+                            <label for="check-5" class="checklist-label">
+                                <span class="checklist-item-title">5. 한자 및 외래어 병기 괄호 붙여쓰기 확인</span>
+                                <span class="checklist-item-desc">단어와 괄호 사이에 불필요한 띄어쓰기 없이 <code>사족(士族)</code>, <code>브루베이커(Brubaker)</code>처럼 완전히 붙여 썼는가?</span>
+                                <span class="checklist-feedback-chip" style="background:#f0fdf4; color:#166534;">맞춤법</span>
+                            </label>
+                        </div>
+
+                        <!-- 항목 6 -->
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check-6" class="checklist-checkbox">
+                            <label for="check-6" class="checklist-label">
+                                <span class="checklist-item-title">6. 각주 제한 원칙 및 저자 익명화 확인</span>
+                                <span class="checklist-item-desc">원고 업로드 시 본문·각주·참고문헌에서 저자 인적사항을 <code>ㅇㅇㅇ</code>으로 마스킹하고, 설명적 주석/사사에만 각주를 사용하였는가?</span>
+                                <span class="checklist-feedback-chip" style="background:#fef3c7; color:#92400e;">심사 규정</span>
+                            </label>
+                        </div>
+
+                        <!-- 항목 7 -->
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check-7" class="checklist-checkbox">
+                            <label for="check-7" class="checklist-label">
+                                <span class="checklist-item-title">7. 사사 및 연구비 각주 위치 점검</span>
+                                <span class="checklist-item-desc">『한국문화인류학』은 논문 제목 각주 1)에, 『비교문화연구』는 저자명 각주에 배치(게재확정 후 삽입)하도록 구분하였는가?</span>
+                                <span class="checklist-feedback-chip" style="background:#e0e7ff; color:#3730a3;">배치 오류</span>
+                            </label>
+                        </div>
+
+                        <!-- 항목 8 -->
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check-8" class="checklist-checkbox">
+                            <label for="check-8" class="checklist-label">
+                                <span class="checklist-item-title">8. 참고문헌 내 공저자 전원 명기 여부</span>
+                                <span class="checklist-item-desc">참고문헌 목록에서 '외'나 'et al.'을 쓰지 않고 모든 저자명을 빠짐없이 전원 기재하였는가?</span>
+                                <span class="checklist-feedback-chip" style="background:#fee2e2; color:#b91c1c;">필수 요건</span>
+                            </label>
+                        </div>
+
+                        <!-- 항목 9 -->
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check-9" class="checklist-checkbox">
+                            <label for="check-9" class="checklist-label">
+                                <span class="checklist-item-title">9. 번역서 [원서연도] 및 법령 홑낫표 확인 (비교문화연구)</span>
+                                <span class="checklist-item-desc">『비교문화연구』 투고 시 번역서에 <code>2014[2003]</code> 원서연도를 넣고, 법령/자료집에 <code>「노인장기요양법」</code> 홑낫표를 적용하였는가?</span>
+                                <span class="checklist-feedback-chip" style="background:#f0fdfa; color:#0f766e;">ICCS 특화</span>
+                            </label>
+                        </div>
+
+                        <!-- 항목 10 -->
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check-10" class="checklist-checkbox">
+                            <label for="check-10" class="checklist-label">
+                                <span class="checklist-item-title">10. 연구윤리(IRB 승인, 표절유사도, 젠더혁신 정책) 준수 확인</span>
+                                <span class="checklist-item-desc">생명윤리 심의(IRB) 및 논문유사도검사(카피킬러 등)를 실시하고, 젠더혁신 가이드라인과 특수관계인 사전 고지 의무를 준수하였는가?</span>
+                                <span class="checklist-feedback-chip" style="background:#f0fdf4; color:#166534;">연구윤리</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        
+        </section>
+    </main>
+
+    <!-- 플로팅 TOP 버튼 -->
+    <button id="back-to-top" class="floating-top-btn" title="페이지 상단으로 이동" aria-label="페이지 상단으로 이동">↑</button>
+
+    <!-- 푸터 -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>한국 문화인류학 양대 학술지 규정 종합 포털</h3>
+                    <p>『한국문화인류학』(KCA) &amp; 『비교문화연구』(ICCS 2026) 공식 간행·절차·작성·윤리 규정집</p>
+                </div>
+                                <div class="footer-links">
+                    <a href="index.html">비교 매트릭스</a>
+                    <a href="kca.html">『한국문화인류학』 규정</a>
+                    <a href="iccs.html">『비교문화연구』 규정</a>
+                    <a href="converter.html">인용 변환기</a>
+                    <a href="checklist.html">체크리스트</a>
+                    <a href="specs.html">제작 환경 &amp; 명세</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 한국 문화인류학 학술 포털 시스템. all rights reserved.</p>
+                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    <span class="udl-conformance-badge">UDL 2025 framework &amp; WCAG 2.1 AA conformance</span>
+                    <span class="udl-conformance-badge" style="border-color: rgba(184, 74, 57, 0.4); color: var(--color-comp-coral);">🛡️ CRAWLER_SHIELD active (16종 AI 학습 봇 차단)</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 자바스크립트 -->
+    <script src="portal.js?v=20261028_1"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+# ============================================================
+# AI.TXT: Machine-Readable AI Governance & Licensing Policy
+# Specification Standard: Spawning AI / ai.txt Working Group
+# ============================================================
+
+User-Agent: *
+Allow-Search: true
+Allow-Index: true
+Allow-Training: false
+Allow-Text-Mining: false
+Allow-Image-Mining: false
+Allow-Derivatives: false
+Allow-RAG-Embedding: false
+
+# Prohibited Operations:
+# 1. Model Pretraining, Fine-Tuning, RLHF, and Weight Adaptation
+# 2. Text and Data Mining (TDM) as defined under EU DSM Directive Art. 4
+# 3. Vector Database Embedding, RAG Knowledge Base Construction, or Bulk Scraping
+# 4. Commercial Exploitation without Explicit Written Bilateral Consent

@@ -15,17 +15,18 @@ copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+AUTHOR OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ================================================================================
-Academic Content & Trademark Notice
+Academic Content, CSL Distribution & Trademark Notice
 ================================================================================
 1. Academic Regulations Content:
    The official texts and guidelines of the academic journals contained in this
-   portal are the intellectual property of their respective governing bodies:
+   portal ("인류학도를 위한 학술지 규정 종합 포털") are the intellectual property
+   of their respective governing bodies:
    - 『Korean Cultural Anthropology』 (『한국문화인류학』):
      The Korean Society for Cultural Anthropology (사단법인 한국문화인류학회, KCA)
    - 『Cross-Cultural Studies』 (『비교문화연구』):
@@ -35,7 +36,16 @@ Academic Content & Trademark Notice
    comparative analysis, and compliance with submission standards under
    applicable fair use and educational principles.
 
-2. AI Governance & Data Mining (CRAWLER_SHIELD v2):
+2. Citation Style Language (CSL) File Distribution Notice:
+   The 『Korean Cultural Anthropology』 CSL (Citation Style Language) file
+   (koanthro.csl / koanthro-csl) provided through Guacamoled is an independent,
+   personal contribution authored and distributed by Kun Wook Ryu (https://kunwryu.github.io/) for academic
+   convenience, and is NOT an official distribution of The Korean Society for
+   Cultural Anthropology (KCA).
+   The CSL file is distributed under the MIT License / Creative Commons
+   Attribution-ShareAlike (CC BY-SA 3.0), conforming to open citation style standards.
+
+3. AI Governance & Data Mining (CRAWLER_SHIELD v2):
    In accordance with ai.txt and robots.txt specifications, automated scraping,
    bulk extraction, and data ingestion for the purpose of training commercial
    generative AI models without explicit prior written authorization are

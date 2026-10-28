@@ -76,6 +76,7 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
+    scroll-padding-top: 135px;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -1701,9 +1702,41 @@ code {
     line-height: 1.5;
 }
 
-/* 스티키 헤더 오프셋 보호 (scroll-margin-top) */
-.tab-content-panel,
+/* 스티키 헤더 오프셋 보호 (scroll-margin-top) - 하위 목차 및 모든 앵커 타깃 적용 */
+:target,
+[id],
+.rule-box[id],
+div[id],
+li[id],
+article[id],
 .academic-card,
-article[id] {
-    scroll-margin-top: 130px;
+.tab-content-panel {
+    scroll-margin-top: 135px;
+}
+
+/* ==========================================================================
+   한국어 어절(단어) 단위 줄 바꿈 및 반응형 가독성 최적화 (word-break: keep-all)
+   ========================================================================== */
+p, li, td, th, h1, h2, h3, h4,
+.rule-box, .banner-card-desc, .academic-card,
+.havruta-trigger, .havruta-content, .checklist-item-title {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    text-wrap: pretty;
+}
+
+/* 모바일 화면 스티키 헤더 오프셋 반응형 연동 */
+@media (max-width: 768px) {
+    html {
+        scroll-padding-top: 105px;
+    }
+    :target,
+    [id],
+    .rule-box[id],
+    div[id],
+    li[id],
+    article[id],
+    .academic-card {
+        scroll-margin-top: 105px;
+    }
 }

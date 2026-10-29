@@ -7,7 +7,7 @@
 [![Standard: KCA & ICCS](https://img.shields.io/badge/Standard-KCA%20%26%20ICCS-8A3B14?style=flat-square)](https://kunwryu.github.io/journal-rules/)
 [![Stack: Vanilla Web](https://img.shields.io/badge/Stack-Vanilla%20Web%20(Zero--Dep)-E34F26?style=flat-square&logo=html5&logoColor=white)](https://kunwryu.github.io/journal-rules/specs.html)
 
-> **사단법인 한국문화인류학회 『한국문화인류학』**과 **서울대학교 비교문화연구소 『비교문화연구』(최신 간행본)**의 공식 간행 규정, 게재 절차, 원고 작성 요령, 연구 윤리 규정을 1:1로 비교 대조하고, 서지 인용 서식을 실시간으로 시뮬레이션할 수 있는 바닐라 웹 표준 기반 무의존성(Zero-Dependency) 학술 정적 웹 포털입니다.
+> **사단법인 한국문화인류학회 _한국문화인류학_**과 **서울대학교 비교문화연구소 _비교문화연구_**의 공식 간행 규정, 게재 절차, 원고 작성 요령, 연구 윤리 규정을 1:1로 비교 대조하고, 서지 인용 서식을 실시간으로 시뮬레이션할 수 있는 바닐라 웹 표준 기반 무의존성(Zero-Dependency) 학술 정적 웹 포털입니다.
 
 ---
 

@@ -541,7 +541,7 @@ button,
 /* 사이드바 & 본문 2컬럼 레이아웃 */
 .content-layout {
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 280px minmax(0, 1fr);
     gap: 2rem;
     align-items: flex-start;
 }
@@ -608,6 +608,8 @@ button,
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    min-width: 0;
+    width: 100%;
 }
 
 /* 학술 카드 아티클 */
@@ -618,6 +620,7 @@ button,
     padding: 2rem;
     box-shadow: var(--shadow-sm);
     transition: var(--transition-normal);
+    min-width: 0;
 }
 
 .academic-card:hover {
@@ -793,9 +796,11 @@ button,
 /* 데이터 테이블 (명확한 가독성) */
 .table-container {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     margin: 1.25rem 0;
     border-radius: var(--border-radius-md);
     border: 1px solid var(--color-accent-border);
+    max-width: 100%;
 }
 
 .data-table {
@@ -956,13 +961,14 @@ code {
 }
 
 /* --- 8. 서지 인용 자동 변환기 (action & expression UDL) --- */
+/* 서지 인용 자동 변환기 - 외곽 academic-card 내 플랫화 (Option A) */
 .converter-container {
-    background: var(--color-card-surface);
-    border: 1px solid var(--color-accent-border);
-    border-radius: var(--border-radius-lg);
-    padding: 2rem;
-    box-shadow: var(--shadow-sm);
-    margin: 1.5rem 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 1rem 0 0 0;
+    box-shadow: none;
+    margin: 1rem 0 0 0;
 }
 
 .converter-controls {
@@ -1040,12 +1046,14 @@ code {
 }
 
 /* --- 9. 메타인지 10대 투고 전 체크리스트 (engagement UDL) --- */
+/* 메타인지 10대 투고 전 체크리스트 - 외곽 academic-card 내 플랫화 */
 .checklist-container {
-    background: var(--color-card-surface);
-    border: 1px solid var(--color-accent-border);
-    border-radius: var(--border-radius-lg);
-    padding: 2rem;
-    box-shadow: var(--shadow-sm);
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 1rem 0 0 0;
+    box-shadow: none;
+    margin: 1rem 0 0 0;
 }
 
 .checklist-progress-bar-wrapper {
@@ -1234,7 +1242,27 @@ code {
     gap: 1rem;
     font-size: 0.8rem;
     color: var(--color-accent);
-    opacity: 0.75;
+    opacity: 0.85;
+}
+
+.footer-author-link,
+.footer-author-link:link,
+.footer-author-link:visited,
+.footer-author-link:active {
+    color: var(--color-secondary) !important;
+    text-decoration: underline !important;
+    font-weight: 700;
+    transition: var(--transition-fast);
+}
+
+.footer-author-link:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 8px rgba(204, 171, 24, 0.4);
+}
+
+.csl-banner-text {
+    flex: 1 1 240px;
+    min-width: 0;
 }
 
 .udl-conformance-badge {
@@ -1250,7 +1278,7 @@ code {
 /* --- 11. 미디어 쿼리 반응형 최적화 --- */
 @media (max-width: 1024px) {
     .content-layout {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
     .sidebar-sticky {
         display: none;
@@ -1465,6 +1493,17 @@ code {
         font-size: 0.8rem;
     }
 
+    .content-layout {
+        grid-template-columns: minmax(0, 1fr);
+        min-width: 0;
+        width: 100%;
+    }
+
+    .main-flow {
+        min-width: 0;
+        width: 100%;
+    }
+
     /* 테이블 가로 스크롤 및 터치 최적화 */
     .table-container {
         overflow-x: auto;
@@ -1472,10 +1511,60 @@ code {
         border-radius: var(--border-radius-md);
         box-shadow: inset -6px 0 10px -4px rgba(0, 0, 0, 0.12);
         margin: 0.75rem 0;
+        max-width: 100%;
     }
 
     .data-table {
-        min-width: 580px; /* 열 찌그러짐 방지 */
+        min-width: 520px; /* 열 찌그러짐 방지 */
+        font-size: 0.84rem;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 8px 10px;
+    }
+
+    /* 실시간 변환기 모바일 플랫화 및 여백 축소 (Option A) */
+    .converter-container {
+        padding: 0.25rem 0 0 0;
+        margin: 0.5rem 0 0 0;
+    }
+
+    .converter-controls {
+        margin-bottom: 1rem;
+    }
+
+    .converter-result-grid {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .converter-box {
+        padding: 0.85rem;
+        gap: 0.5rem;
+    }
+
+    .converter-box-title {
+        font-size: 0.9rem;
+    }
+
+    .converter-output {
+        padding: 0.75rem;
+        font-size: 0.86rem;
+    }
+
+    /* 체크리스트 모바일 플랫화 및 여백 축소 */
+    .checklist-container {
+        padding: 0.25rem 0 0 0;
+        margin: 0.5rem 0 0 0;
+    }
+
+    .checklist-progress-bar-wrapper {
+        margin: 0.75rem 0 1.25rem 0;
+    }
+
+    .checklist-item {
+        padding: 0.85rem 1rem;
     }
 
     .meta-summary-grid {

@@ -4,22 +4,23 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![Accessibility](https://img.shields.io/badge/Accessibility-UDL%202025%20%2B%20WCAG%20AA-009ccf?style=flat-square)](https://kunwryu.github.io/journal-rules/specs.html)
 [![AI Crawler Shield](https://img.shields.io/badge/Crawler%20Shield-16%20AI%20Bots%20Blocked-red?style=flat-square)](https://kunwryu.github.io/journal-rules/)
-[![Standard: KCA & ICCS](https://img.shields.io/badge/Standard-KCA%20%26%20ICCS-8A3B14?style=flat-square)](https://kunwryu.github.io/journal-rules/)
+[![Standard: KCA & ICCS & MOE AI](https://img.shields.io/badge/Standard-KCA%20%26%20ICCS%20%26%20MOE--AI-8A3B14?style=flat-square)](https://kunwryu.github.io/journal-rules/)
 [![Stack: Vanilla Web](https://img.shields.io/badge/Stack-Vanilla%20Web%20(Zero--Dep)-E34F26?style=flat-square&logo=html5&logoColor=white)](https://kunwryu.github.io/journal-rules/specs.html)
 
-> **사단법인 한국문화인류학회 『한국문화인류학』**과 **서울대학교 비교문화연구소 『비교문화연구』**의 공식 간행 규정, 게재 절차, 원고 작성 요령, 연구 윤리 규정을 1:1로 비교 대조하고, 서지 인용 서식을 실시간으로 시뮬레이션할 수 있는 바닐라 웹 표준 기반 무의존성(Zero-Dependency) 학술 정적 웹 포털입니다.
+> **사단법인 한국문화인류학회 『한국문화인류학』**과 **서울대학교 비교문화연구소 『비교문화연구』(최신 간행본)**의 공식 간행 규정, 게재 절차, 원고 작성 요령, 연구 윤리 규정을 1:1로 비교 대조하고, **교육부 「대학 AI 활용 윤리 가이드라인」** 및 서지 인용 서식을 실시간으로 시뮬레이션할 수 있는 바닐라 웹 표준 기반 무의존성(Zero-Dependency) 학술 정적 웹 포털입니다.
 
 ---
 
 ## 📌 프로젝트 개요 (Overview)
 
-한국 문화인류학 분야의 대표 학술지인 『한국문화인류학』(KCA)과 『비교문화연구』(ICCS)는 본문 내주 표기법(쉼표 유무, 쪽수 연결 기호), 공저자 연결 기호(`and` vs `&`), 번역서 원서 연도 병기 방식, `<자료>` 섹션의 정렬 및 표제 부호(겹낫표 vs 홑낫표) 등에서 뚜렷한 서지 관례 차이를 보입니다.
+한국 문화인류학 분야의 대표 학술지인 『한국문화인류학』(KCA)과 『비교문화연구』(ICCS)는 본문 내주 표기법(쉼표 유무, 쪽수 연결 기호), 공저자 연결 기호(`and` vs `&`), 번역서 원서 연도 병기 방식, `<자료>` 섹션의 정렬 및 표제 부호(겹낫표 vs 홑낫표) 등에서 뚜렷한 서지 관례 차이를 보입니다. 또한 최근 생성형 AI의 광범위한 확산에 따라 학술 연구 및 과제 작성 시 AI 윤리 가이드라인 준수와 인용 투명성 확보가 핵심적인 연구 윤리 과제로 대두되었습니다.
 
-본 프로젝트는 문화인류학 연구자, 대학원생, 투고자가 규정 불일치로 인해 겪는 서식 혼선을 줄이고, 투고 규격을 사전에 철저히 준수할 수 있도록 돕기 위해 제작되었습니다.
+본 프로젝트는 문화인류학 연구자, 대학원생, 학부생 및 투고자가 규정 불일치로 인해 겪는 서식 혼선을 줄이고, 투고 규격과 학술 AI 윤리 원칙을 사전에 철저히 준수할 수 있도록 돕기 위해 제작되었습니다.
 
 - **표준 출처 (Ground Truth)**:
   - 『한국문화인류학』: 사단법인 한국문화인류학회 공식 웹사이트 공시 학술 규정(간행 규정, 게재 절차, 원고 작성 요령, 연구 윤리 규정)
   - 『비교문화연구』: 서울대학교 비교문화연구소 『비교문화연구』 제32권 1호(간행본 부록, pp. 525~548) 정식 수록 규정집
+  - 『대학 AI 가이드라인』: 교육부 · 한국대학교육협의회 공식 발표 「대학 AI 활용 윤리 가이드라인」(2026. 8., 연구책임: 고려대학교 김자미 교수 연구진)
 
 ---
 
@@ -38,7 +39,14 @@
 - **원터치 복사 지원**: 각 규정 및 실례 블록에 고대비 복사 버튼(`.copy-btn`)을 제공하여 서식을 즉시 클립보드로 복사 가능
 - **정밀 앵커 퀵점프**: 사이드바 하위 목차 클릭 시 상단 고정 헤더에 가려지지 않도록 `scroll-margin-top: 135px` 오프셋 보정 완료
 
-### 3. 인용 자동 변환기 & 시뮬레이터 (`converter.html`)
+### 3. 대학 AI 가이드라인 (`ai-guidelines.html`)
+- **5대 핵심 원칙 & 12대 세부 원칙**: 학문적 진실성, 인간 중심성과 책임성, 투명성과 신뢰성(정보 검증 의무 및 제로-할루시네이션), 공정성, 정보 보호 및 보안의 교육부 표준 공시 체계 수록
+- **교수자 vs 학습자 실천 가이드 매트릭스**: 강의계획서 AI 활용 3대 유형(전면 허용 / 부분 허용 / 전면 금지)과 과정 중심 평가 설계, 학습자의 지식 확장 파트너 활용 및 1차 사료 교차 검증 지침
+- **학술 과제/논문 출처 표기 표준**: APA 7th 및 Chicago 17th 표준에 준거한 생성형 AI 본문 내주, 각주, 참고문헌 공식 인용 서식
+- **원클릭 복사 선언서 양식**: 과제물 제출 시 즉시 동봉할 수 있는 「생성형 AI 활용 내역 선언서」 표준 템플릿(`.copy-btn` 원터치 복사 지원)
+- **KCA / ICCS 학술지 투고 연계**: AI 저자권 불인정 원칙, 연구방법론 절 및 사사 표기 요건, 가상 서지 날조(Hallucination)에 대한 연구부정행위 제재 안내
+
+### 4. 인용 자동 변환기 & 시뮬레이터 (`converter.html`)
 - 선택 가능한 10종 문헌 프리셋 지원:
   1. 일반 저서 (단독 저자)
   2. 학술지 수록 논문 (단독 저자)
@@ -52,11 +60,11 @@
   10. 석·박사 학위논문
 - 본문 괄호 내주와 참고문헌 목록 양식을 양대 학술지 스타일로 실시간 자동 변환 및 원클릭 복사
 
-### 4. 자가 체크리스트 (`checklist.html`)
+### 5. 자가 체크리스트 (`checklist.html`)
 - 원고 구성, 서지 인용, 익명화 조치, 연구 윤리 준수 항목을 단계별로 점검하는 메타인지 자가진단 시스템
 - 브라우저 로컬스토리지(`localStorage`) 기반 진행률 자동 저장 및 원터치 초기화 지원
 
-### 5. 웹사이트 제작 환경 및 도구 (`specs.html`)
+### 6. 웹사이트 제작 환경 및 도구 (`specs.html`)
 - 엔지니어링 아키텍처 및 6-pack MCP 오케스트레이션 명세
 - 추가 예정 학술지(『한국이민학』, 『한국여성학』, 『경제와 사회』, 『문화와 사회』) 확장 파이프라인 소개
 
@@ -89,20 +97,21 @@
 
 ```text
 journal-rules/
-├── index.html       # 메인 페이지: 1:1 종합 비교 매트릭스 & 학술지 서식 핵심 대조표
-├── kca.html         # 『한국문화인류학』 규정 전용 상세 페이지 & CSL 다운로드 연계
-├── iccs.html        # 『비교문화연구』 규정 전용 상세 페이지
-├── converter.html   # 인용 자동 변환기 & 시뮬레이터 (10종 프리셋)
-├── checklist.html   # 자가 체크리스트 (로컬스토리지 자동 저장)
-├── specs.html       # 웹사이트 제작 환경 및 도구
-├── style.css        # UDL 기반 공통 통합 CSS 스타일시트 (keep-all & 스티키 오프셋 탑재)
-├── portal.js        # 변환기 엔진, 클립보드 복사, 체크리스트 스크립트
-├── robots.txt       # 검색엔진 허용 및 AI 학습 봇 차단 규약
-├── ai.txt           # Spawning AI 기계가독형 AI 마이닝 거부 정책
-├── _headers         # 배포 웹서버 응답 보안 헤더 (X-Robots-Tag 등)
-├── .nojekyll        # GitHub Pages Jekyll 빌드 간섭 차단 파일
-├── LICENSE          # 오픈소스 라이선스 (MIT) 및 저작권자 고지
-└── README.md        # 프로젝트 소개 및 기술 문서
+├── index.html          # 메인 페이지: 1:1 종합 비교 매트릭스 & 학술지 서식 핵심 대조표
+├── kca.html            # 『한국문화인류학』 규정 전용 상세 페이지 & CSL 다운로드 연계
+├── iccs.html           # 『비교문화연구』 규정 전용 상세 페이지
+├── ai-guidelines.html  # 대학 AI 가이드라인 전용 페이지 (5대 원칙·출처표기·선언서 템플릿)
+├── converter.html      # 인용 자동 변환기 & 시뮬레이터 (10종 프리셋)
+├── checklist.html      # 자가 체크리스트 (로컬스토리지 자동 저장)
+├── specs.html          # 웹사이트 제작 환경 및 도구
+├── style.css           # UDL 기반 공통 통합 CSS 스타일시트 (keep-all & 스티키 오프셋 탑재)
+├── portal.js           # 변환기 엔진, 클립보드 복사, 체크리스트 스크립트
+├── robots.txt          # 검색엔진 허용 및 AI 학습 봇 차단 규약
+├── ai.txt              # Spawning AI 기계가독형 AI 마이닝 거부 정책
+├── _headers            # 배포 웹서버 응답 보안 헤더 (X-Robots-Tag 등)
+├── .nojekyll           # GitHub Pages Jekyll 빌드 간섭 차단 파일
+├── LICENSE             # 오픈소스 라이선스 (MIT) 및 저작권자 고지
+└── README.md           # 프로젝트 소개 및 기술 문서
 ```
 
 ---
@@ -137,4 +146,5 @@ npx serve .
 
 - 포털의 웹 코드, UI 설계 및 스크립트: Copyright (c) 2026 Kun Wook Ryu ([MIT License](LICENSE))
 - 수록된 각 학술지의 규정 본문 내용 및 저작권: **사단법인 한국문화인류학회** 및 **서울대학교 비교문화연구소**에 각각 귀속
+- 수록된 『대학 AI 활용 윤리 가이드라인』의 본문 내용 및 저작권: **대한민국 교육부** 및 **한국대학교육협의회**에 귀속 (공공누리 및 학술·교육 목적 인용)
 - 『한국문화인류학』 CSL 스타일 파일: [류건욱 (Kun Wook Ryu)](https://kunwryu.github.io/) 개인 제작 (`Guacamoled`)

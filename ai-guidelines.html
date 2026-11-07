@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대학 AI 가이드라인 | 인류학도를 위한 학술지 규정 종합 포털</title>
+    <meta name="description" content="교육부 대학 AI 활용 윤리 가이드라인의 5대 핵심 원칙, 12개 세부 원칙, 교수자·학습자 실천 기준 및 학술 과제·논문 제출 시 AI 출처 표기 표준 안내">
+    <!-- ============================================================
+         보안 원칙: CRAWLER_SHIELD v2 (16종 AI 학습 봇 차단 & TDM 권리 유보)
+    ============================================================ -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="GPTBot" content="noindex, nofollow" />
+    <meta name="OAI-SearchBot" content="noindex, nofollow" />
+    <meta name="ChatGPT-User" content="noindex, nofollow" />
+    <meta name="ClaudeBot" content="noindex, nofollow" />
+    <meta name="anthropic-ai" content="noindex, nofollow" />
+    <meta name="Claude-Web" content="noindex, nofollow" />
+    <meta name="Google-Extended" content="noindex, nofollow" />
+    <meta name="Googlebot-AI" content="noindex, nofollow" />
+    <meta name="Applebot-Extended" content="noindex, nofollow" />
+    <meta name="Amazonbot" content="noindex, nofollow" />
+    <meta name="Bytespider" content="noindex, nofollow" />
+    <meta name="CCBot" content="noindex, nofollow" />
+    <meta name="meta-externalagent" content="noindex, nofollow" />
+    <meta name="FacebookBot" content="noindex, nofollow" />
+    <meta name="PerplexityBot" content="noindex, nofollow" />
+    <meta name="Cohere-ai" content="noindex, nofollow" />
+    <meta http-equiv="X-Robots-Tag" content="noimageai, noai" />
+    <meta name="tdm-reservation" content="1" />
+    <link rel="stylesheet" href="style.css?v=20261029_2">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">본문 바로가기 (skip to main content)</a>
+
+    <!-- 최상단 헤더 -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="brand-wrapper">
+                <div class="brand-info">
+                    <div class="brand-badge-row">
+                        <span class="brand-badge">academic portal</span>
+                    </div>
+                    <h1 class="brand-title"><a href="index.html" style="color: inherit; text-decoration: none;">인류학도를 위한 학술지 규정 종합 포털</a></h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- 메인 내비게이션 탭 (MPA 고유 파일 링크) -->
+        <nav class="nav-tab-container" aria-label="포털 주요 기능 탭">
+            <div class="nav-tab-wrapper" role="tablist">
+                <a href="index.html" class="tab-btn" role="tab" aria-selected="false">
+                    <span>비교 매트릭스</span>
+                </a>
+                <a href="kca.html" class="tab-btn" role="tab" aria-selected="false">
+                    <span>『한국문화인류학』 규정</span>
+                </a>
+                <a href="iccs.html" class="tab-btn" role="tab" aria-selected="false">
+                    <span>『비교문화연구』 규정</span>
+                </a>
+                <a href="ai-guidelines.html" class="tab-btn active" role="tab" aria-selected="true">
+                    <span>대학 AI 가이드라인</span>
+                </a>
+                <a href="converter.html" class="tab-btn" role="tab" aria-selected="false">
+                    <span>인용 변환기</span>
+                </a>
+                <a href="checklist.html" class="tab-btn" role="tab" aria-selected="false">
+                    <span>체크리스트</span>
+                </a>
+                <a href="specs.html" class="tab-btn" role="tab" aria-selected="false">
+                    <span>제작 환경 &amp; 명세</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 메인 본문 영역 (100% 상시 가시성 보장) -->
+    <main id="main-content" class="page-container" tabindex="-1">
+        <section class="mpa-page-section">
+            <div class="content-layout">
+                <!-- 스티키 사이드바 퀵점프 -->
+                <aside class="sidebar-sticky" aria-label="대학 AI 가이드라인 바로가기">
+                    <div class="sidebar-heading">📑 가이드라인 퀵점프</div>
+                    <ul class="sidebar-nav-list">
+                        <li><a href="#ai-overview" class="sidebar-link active">1. 가이드라인 개요 및 목적</a></li>
+                        <li><a href="#ai-principles" class="sidebar-link">2. 5대 핵심 원칙 &amp; 12대 세부 원칙</a></li>
+                        <li><a href="#ai-p1" class="sidebar-link" style="padding-left: 20px;">└ ➊ 학문적 진실성</a></li>
+                        <li><a href="#ai-p2" class="sidebar-link" style="padding-left: 20px;">└ ➋ 인간 중심성과 책임성</a></li>
+                        <li><a href="#ai-p3" class="sidebar-link" style="padding-left: 20px;">└ ➌ 투명성과 신뢰성</a></li>
+                        <li><a href="#ai-p4" class="sidebar-link" style="padding-left: 20px;">└ ➍ 공정성</a></li>
+                        <li><a href="#ai-p5" class="sidebar-link" style="padding-left: 20px;">└ ➎ 정보 보호 및 보안</a></li>
+                        <li><a href="#ai-actions" class="sidebar-link">3. 교수자 vs 학습자 실천 가이드</a></li>
+                        <li><a href="#ai-actions-instructor" class="sidebar-link" style="padding-left: 20px;">└ 교수자 실천 가이드</a></li>
+                        <li><a href="#ai-actions-student" class="sidebar-link" style="padding-left: 20px;">└ 학습자 실천 가이드</a></li>
+                        <li><a href="#ai-citation" class="sidebar-link">4. 학술 과제/논문 출처 표기 표준</a></li>
+                        <li><a href="#ai-citation-examples" class="sidebar-link" style="padding-left: 20px;">└ 생성형 AI 인용 표준 양식</a></li>
+                        <li><a href="#ai-disclosure-form" class="sidebar-link" style="padding-left: 20px;">└ AI 활용 선언서 템플릿</a></li>
+                        <li><a href="#ai-ethics-journal" class="sidebar-link">5. KCA / ICCS 학술지 투고 연계</a></li>
+                    </ul>
+                </aside>
+
+                <!-- 본문 플로우 -->
+                <div class="main-flow">
+                    <!-- 공식 출처 명기 배너 -->
+                    <div class="source-notice-banner">
+                        <div class="source-badge">공식 가이드라인 연계</div>
+                        <div class="source-text">
+                            본 가이드라인은 교육부 및 한국대학교육협의회에서 2026년 8월 발표한 <strong>「대학 AI 활용 윤리 가이드라인」</strong>(연구책임: 고려대학교 김자미 교수 연구진)을 바탕으로 문화인류학 연구자, 대학원생 및 학부생의 학술 연구 및 과제 작성 환경에 맞추어 구성한 실무 표준 가이드입니다.
+                        </div>
+                    </div>
+
+                    <!-- 제1장: 가이드라인 개요 및 목적 -->
+                    <article id="ai-overview" class="academic-card">
+                        <header class="academic-card-header">
+                            <div class="card-title-group">
+                                <span class="card-section-badge">overview &amp; purpose</span>
+                                <h2 class="card-h2-title">1. 가이드라인 개요 및 목적</h2>
+                                <p class="card-sub-rule">인공지능 기술의 고도화에 대응하는 고등교육 구성원의 자율적·예방적 실천 기준</p>
+                            </div>
+                        </header>
+
+                        <div class="rule-box">
+                            <h3 class="rule-title">제정 배경 및 적용 범위</h3>
+                            <p class="rule-desc">
+                                생성형 인공지능(Generative AI)의 등장은 학문 연구와 학습의 효율성을 비약적으로 증대시키는 동시에 표절, 환각(Hallucination), 허위 서지 날조, 데이터 편향, 저작권 침해 등 심각한 윤리적·학술적 문제를 야기하고 있습니다. 본 가이드라인은 대학 구성원을 규제하거나 처벌하기 위한 수단이 아니라, 책임감 있고 주체적인 인공지능 활용을 장려하고 사전 예방적 기준을 확립하는 데 목적이 있습니다.
+                            </p>
+                            <ul class="bullet-list" style="margin-top: 10px;">
+                                <li><strong>적용 범위:</strong> 학부 및 대학원 수업 준비, 강의 진행, 과제 작성, 시험 및 평가, 학위논문 및 학술지 투고 논문 작성 등 대학 교육·연구 전반</li>
+                                <li><strong>3대 기본 관점:</strong> 교육 목표 중심의 도구적 활용, 구성원 간 상호 신뢰와 책임성 담보, 기술 발전에 유연하게 대응하는 지속적 업데이트</li>
+                            </ul>
+                        </div>
+
+                        <div class="callout-box info" style="margin-top: 1.25rem;">
+                            <div class="callout-icon" aria-hidden="true">💡</div>
+                            <div class="callout-body">
+                                <span class="callout-title">핵심 관점: '처벌'이 아닌 '역량 증진과 학문적 책임'</span>
+                                <p style="margin-top: 4px; font-size: 0.95rem; line-height: 1.6;">
+                                    인공지능은 연구자의 지적 노동을 전면 대체하는 수단이 아니라, 비판적 사고와 지식 확장을 돕는 <strong>'지적 협업 도구'</strong>입니다. 인공지능을 활용하여 생산된 모든 학술적 결과물에 대한 궁극적인 윤리적·법적 책임은 오직 연구자 개인에게 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 제2장: 5대 핵심 원칙 & 12대 세부 원칙 -->
+                    <article id="ai-principles" class="academic-card">
+                        <header class="academic-card-header">
+                            <div class="card-title-group">
+                                <span class="card-section-badge">core &amp; sub-principles</span>
+                                <h2 class="card-h2-title">2. 5대 핵심 원칙 &amp; 12대 세부 원칙</h2>
+                                <p class="card-sub-rule">교육부 공식 가이드라인이 명시한 대학 인공지능 활용 5대 원칙 체계</p>
+                            </div>
+                        </header>
+
+                        <!-- 원칙 1 -->
+                        <div id="ai-p1" class="rule-box gold" style="margin-bottom: 1.5rem;">
+                            <h3 class="rule-title">➊ 학문적 진실성</h3>
+                            <p class="rule-desc">연구와 학습 과정에서 정직성과 성실성을 유지하며, 학술적 진실성을 훼손하지 않는 범위 내에서 인공지능을 활용함</p>
+                            <div class="table-container" style="margin-top: 10px;">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 25%;">세부 원칙</th>
+                                            <th>주요 요구 규격 및 실천 지침</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>1-1. 학문적 윤리 준수</strong></td>
+                                            <td>인공지능이 생성한 텍스트, 코드, 분석 결과를 본인이 직접 작성·도출한 것처럼 위장하는 행위(대필 및 위조)를 절대 엄금하며 소속 기관의 연구 윤리 규정을 성실히 준수함</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>1-2. 인용 및 출처 표기</strong></td>
+                                            <td>인공지능 도구를 활용하여 생성된 아이디어, 문장, 데이터, 번역물 등은 공식 인용 표준에 따라 도구명, 모델 버전, 프롬프트, 생성 일자를 투명하게 표기함</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- 원칙 2 -->
+                        <div id="ai-p2" class="rule-box" style="margin-bottom: 1.5rem;">
+                            <h3 class="rule-title">➋ 인간 중심성과 책임성</h3>
+                            <p class="rule-desc">인간의 주체적 통제권을 보장하며, 인공지능 활용에 따른 모든 학술적·사회적 결과에 대해 인간 연구자가 책임을 짐</p>
+                            <div class="table-container" style="margin-top: 10px;">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 25%;">세부 원칙</th>
+                                            <th>주요 요구 규격 및 실천 지침</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>2-1. 결과에 대한 책임</strong></td>
+                                            <td>인공지능은 법적·윤리적 인격체가 아니므로 <strong>단독 저자 또는 공동 저자가 될 수 없음</strong>. 인공지능 생성 결과물의 오류, 왜곡, 저작권 침해 등에 대한 최종 책임은 연구자 본인에게 귀속됨</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>2-2. 상호합의적 활용</strong></td>
+                                            <td>교수자와 학습자, 혹은 공동 연구자 간에 인공지능 도구의 허용 범위(전면 허용, 제한적 보조, 전면 금지)를 사전에 명확히 합의하고 공표함</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>2-3. 인간 중심 결정</strong></td>
+                                            <td>평가, 심사, 추천 등 중요 학술 의사결정 시 인공지능에 전적인 판단을 위임하지 않으며, 인간의 가치와 기본권을 침해하지 않도록 인간이 최종 결정권을 행사함</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- 원칙 3 -->
+                        <div id="ai-p3" class="rule-box gold" style="margin-bottom: 1.5rem;">
+                            <h3 class="rule-title">➌ 투명성과 신뢰성</h3>
+                            <p class="rule-desc">인공지능 활용 과정과 결과를 숨김없이 공개하고, 산출물의 정확성과 신뢰성을 철저히 검증함</p>
+                            <div class="table-container" style="margin-top: 10px;">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 25%;">세부 원칙</th>
+                                            <th>주요 요구 규격 및 실천 지침</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>3-1. 사용 사실 공개</strong></td>
+                                            <td>과제물, 보고서, 논문 제출 시 인공지능 사용 여부 및 활용 범위(아이디어 도출, 문장 교정, 코딩 지원 등)를 명시적으로 밝힘</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>3-2. 사용 과정 공개</strong></td>
+                                            <td>연구의 재현 가능성과 학술적 검증을 위해 사용한 프롬프트 내용, 대화 로그, 프롬프트 엔지니어링 과정을 설명 가능하게 보존함</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>3-3. 정보 검증 의무<br><span style="color: var(--color-comp-coral); font-size: 0.8rem;">(★ 제로-할루시네이션)</span></strong></td>
+                                            <td>인공지능이 생성한 사실 관계, 수치 통계, 서지 정보는 반드시 <strong>공인된 1차 사료 및 원문 문헌과 직접 대조(Direct De visu Check)</strong>하여 환각(Hallucination)에 의한 허위 인용을 사전에 전면 차단함</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- 원칙 4 -->
+                        <div id="ai-p4" class="rule-box teal" style="margin-bottom: 1.5rem;">
+                            <h3 class="rule-title">➍ 공정성</h3>
+                            <p class="rule-desc">사회적 편향과 차별을 배제하고 모든 연구자 및 학습자에게 공평한 참여 기회를 보장함</p>
+                            <div class="table-container" style="margin-top: 10px;">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 25%;">세부 원칙</th>
+                                            <th>주요 요구 규격 및 실천 지침</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>4-1. 형평성과 비차별</strong></td>
+                                            <td>학습 데이터에 내재된 성별, 인종, 국적, 장애, 종교 등에 대한 문화적 편향과 고정관념이 연구 결과물에 무비판적으로 투영되지 않도록 인류학적·비판적 시각에서 검토함</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>4-2. 포용성</strong></td>
+                                            <td>유료 인공지능 도구에 대한 접근 격차로 인해 학습자 간 불평등이 발생하지 않도록 대학 및 연구 기관은 무료·공공 대안 도구를 안내하거나 보편적 환경을 조성함</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- 원칙 5 -->
+                        <div id="ai-p5" class="rule-box">
+                            <h3 class="rule-title">➎ 정보 보호 및 보안</h3>
+                            <p class="rule-desc">개인정보, 미공개 연구 데이터 및 지식재산권을 철저히 보호하고 안전한 도구를 선별 활용함</p>
+                            <div class="table-container" style="margin-top: 10px;">
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 25%;">세부 원칙</th>
+                                            <th>주요 요구 규격 및 실천 지침</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>5-1. 개인정보 및 보안</strong></td>
+                                            <td>연구 참여자의 민감한 개인식별정보(PII), 현지조사(Fieldwork) 원자료, 인터뷰 녹취록, 미공개 학술 특허 및 논문 초안을 외부 상용 인공지능 프롬프트에 무단 입력하지 않음</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>5-2. 안전성</strong></td>
+                                            <td>보안 수준이 불명확하거나 데이터 재학습 정책이 불투명한 도구의 사용을 지양하고, 기관 공인 엔터프라이즈 환경 또는 비학습 옵션(Opt-Out)이 보장된 인공지능을 우선 사용함</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 제3장: 교수자 vs 학습자 실천 가이드 매트릭스 -->
+                    <article id="ai-actions" class="academic-card">
+                        <header class="academic-card-header">
+                            <div class="card-title-group">
+                                <span class="card-section-badge">action guidelines matrix</span>
+                                <h2 class="card-h2-title">3. 교수자 vs 학습자 실천 가이드 매트릭스</h2>
+                                <p class="card-sub-rule">강의 준비, 수업 진행, 과제 작성, 평가 단계별 상호 준수 수칙</p>
+                            </div>
+                        </header>
+
+                        <!-- 교수자 가이드 -->
+                        <div id="ai-actions-instructor" class="rule-box" style="margin-bottom: 1.5rem;">
+                            <h3 class="rule-title">교수자 실천 가이드 (Instructor Guidelines)</h3>
+                            <ul class="bullet-list">
+                                <li><strong>강의계획서 내 인공지능 활용 방침 명시:</strong> 교과목 특성에 맞추어 아래 3대 유형 중 하나를 명확히 고지함
+                                    <div class="table-container" style="margin: 8px 0 12px 0;">
+                                        <table class="data-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>방침 유형</th>
+                                                    <th>적용 기준 및 과제 제출 요건</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>전면 허용 (Full Use)</strong></td>
+                                                    <td>자료 탐색, 번역, 문장 윤문, 코딩 등 전 과정 활용 허용. 단, 프롬프트 및 활용 내역 보고서 첨부 필수</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>부분 허용 (Restricted Use)</strong></td>
+                                                    <td>문법 검사나 브레인스토밍 등 보조적 용도로만 한정. 핵심 논리 전개 및 데이터 분석 단계 인공지능 생성문 직접 삽입 금지</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>전면 금지 (No Use)</strong></td>
+                                                    <td>인공지능 도구 일체 사용 불가. 평가 시 구술 면접이나 대면 실기 평가 병행 권장</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </li>
+                                <li><strong>과정 중심의 평가 설계:</strong> 단순 단답형 암기 과제나 일반적 개요 서술 과제는 지양하고, 현지조사 자료 해석, 비판적 텍스트 독해, 상호 토론 등 심층적 사고를 요하는 과제 설계</li>
+                                <li><strong>투명한 피드백과 소통:</strong> 인공지능 탐지기(Detector)의 위양성(False Positive) 가능성을 인지하고, 탐지기 수치만으로 부정을 단정하지 않으며 학습자와의 대면 면담을 통해 소명 절차 보장</li>
+                            </ul>
+                        </div>
+
+                        <!-- 학습자 가이드 -->
+                        <div id="ai-actions-student" class="rule-box teal">
+                            <h3 class="rule-title">학습자 실천 가이드 (Student Guidelines)</h3>
+                            <ul class="bullet-list">
+                                <li><strong>자기주도적 지식 탐구의 파트너:</strong> 과제 작성 시 인공지능을 단순 대필용으로 사용하지 않고, 배경지식 탐색, 논리 점검, 가설 검증의 비판적 조력자로 활용함</li>
+                                <li><strong>1차 사료 교차 검증 의무:</strong> 인공지능이 제시한 학술 논문, 저서, 인용문, 통계치는 반드시 학술 DB(RISS, DBpia, JSTOR)를 통해 실존 여부 및 쪽수를 직접 확인함</li>
+                                <li><strong>과제 제출 시 AI 활용 선언서 동봉:</strong> 교과목 방침에 따라 인공지능을 사용한 경우 어떤 도구를 어떤 목적으로 사용했는지 서술한 선언서를 과제물 첫 페이지나 말미에 성실히 첨부함</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- 제4장: 학술 과제/논문 출처 표기 표준 & 선언서 -->
+                    <article id="ai-citation" class="academic-card">
+                        <header class="academic-card-header">
+                            <div class="card-title-group">
+                                <span class="card-section-badge">citation standards &amp; disclosure form</span>
+                                <h2 class="card-h2-title">4. 학술 과제/논문 출처 표기 표준 및 선언서</h2>
+                                <p class="card-sub-rule">학술적 투명성을 보장하는 인공지능 생성물 공식 인용 및 서식 표준</p>
+                            </div>
+                        </header>
+
+                        <!-- 공식 인용 양식 -->
+                        <div id="ai-citation-examples" class="rule-box gold" style="margin-bottom: 1.5rem;">
+                            <h3 class="rule-title">생성형 AI 인용 표준 양식</h3>
+                            <p class="rule-desc">
+                                APA 7th 및 Chicago 17th 표준에 준하여 학술 과제 및 논문 본문/각주/참고문헌에 인공지능 생성물을 표기하는 공식 권고 규격입니다.
+                            </p>
+                            
+                            <div class="example-box" style="margin-top: 1rem;">
+                                <div class="example-box-header">
+                                    <span class="example-label">본문 내주 및 각주 표기 실례</span>
+                                    <button type="button" class="copy-btn" aria-label="본문 내주 및 각주 표기 실례 복사">복사</button>
+                                </div>
+                                <pre>(OpenAI ChatGPT 2026)
+각주: OpenAI, ChatGPT (GPT-4o 버전), 대화형 프롬프트: "인류학적 문화상대주의와 보편윤리의 긴장 관계에 대한 현대적 쟁점 요약", 2026. 8. 20. 생성.</pre>
+                            </div>
+
+                            <div class="example-box" style="margin-top: 1rem;">
+                                <div class="example-box-header">
+                                    <span class="example-label">참고문헌 목록 표기 실례</span>
+                                    <button type="button" class="copy-btn" aria-label="참고문헌 목록 표기 실례 복사">복사</button>
+                                </div>
+                                <pre>OpenAI. 2026. ChatGPT (GPT-4o 버전) [대규모 언어 모델]. https://chat.openai.com. (2026. 8. 20. 질의 생성).
+Anthropic. 2026. Claude 3.5 Sonnet [인공지능 모델]. https://claude.ai. (2026. 9. 12. 번역 교정).</pre>
+                            </div>
+                        </div>
+
+                        <!-- 과제 제출용 AI 활용 선언서 템플릿 -->
+                        <div id="ai-disclosure-form" class="rule-box">
+                            <h3 class="rule-title">과제 제출용 AI 활용 선언서 템플릿</h3>
+                            <p class="rule-desc">과제물이나 소논문 제출 시 서두 또는 말미에 첨부할 수 있는 표준 양식입니다. 우측 복사 버튼을 눌러 바로 활용할 수 있습니다.</p>
+
+                            <div class="example-box" style="margin-top: 1rem;">
+                                <div class="example-box-header">
+                                    <span class="example-label">「생성형 AI 활용 내역 선언서」 표준 양식</span>
+                                    <button type="button" class="copy-btn" aria-label="선언서 표준 양식 복사">복사</button>
+                                </div>
+                                <pre>[생성형 AI 활용 내역 선언서]
+
+1. 과제명: 
+2. 제출자: 성명 (학번 / 전공)
+3. 담당 교수 및 교과목명: 
+4. 인공지능 활용 여부: [ ] 예  /  [ ] 아니오 (전혀 사용하지 않음)
+
+5. 세부 활용 내역 (해당 항목 체크 및 상세 서술):
+   [ ] 자료 조사 및 배경 문헌 탐색
+   [ ] 아이디어 도출 및 개요 작성
+   [ ] 외국어 문헌 번역 및 어휘 검토
+   [ ] 작성된 초안의 문법·윤문 교정
+   [ ] 데이터 처리 및 코딩 보조
+
+6. 사용 도구 및 프롬프트 요약:
+   - 사용 도구명 및 버전: (예: ChatGPT Plus GPT-4o, Claude 3.5 Sonnet 등)
+   - 주요 프롬프트 및 질의 목적: 
+   - 생성 결과물의 반영 비율 및 본인 수정 내용: 
+
+7. 학문적 진실성 서약:
+   본인은 본 과제물을 작성함에 있어 교육부 「대학 AI 활용 윤리 가이드라인」 및 교과목 지침을 준수하였으며, 인공지능이 생성한 내용을 비판적으로 검토하고 1차 사료를 직접 대조하여 사실관계를 확인하였습니다. 본 결과물에 포함된 모든 서술에 대한 학술적·윤리적 최종 책임은 본인에게 있음을 엄숙히 서약합니다.
+
+2026년    월    일
+제출자:                   (인/서명)</pre>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 제5장: KCA / ICCS 학술지 투고 연계 -->
+                    <article id="ai-ethics-journal" class="academic-card">
+                        <header class="academic-card-header">
+                            <div class="card-title-group">
+                                <span class="card-section-badge">journal submission policy</span>
+                                <h2 class="card-h2-title">5. KCA / ICCS 학술지 투고 연계</h2>
+                                <p class="card-sub-rule">인류학 주요 학술지(한국문화인류학 &amp; 비교문화연구) 투고 시 AI 관련 권고 기준</p>
+                            </div>
+                        </header>
+
+                        <div class="rule-box">
+                            <h3 class="rule-title">학술지 투고 시 저자권 및 AI 활용 필수 유의사항</h3>
+                            <ul class="bullet-list">
+                                <li><strong>AI 저자권 불인정 원칙:</strong> 국제의학학술지편집인위원회(ICMJE) 및 출판윤리위원회(COPE) 원칙에 따라, 『한국문화인류학』과 『비교문화연구』 투고 논문에서 인공지능은 저자(Author)로 인정되지 않으며 공동 저자로 이름을 올릴 수 없음</li>
+                                <li><strong>방법론(Methods) 및 사사(Acknowledgments) 명기:</strong> 논문 작성 과정에서 인공지능 도구를 사용한 경우, 방법론 절이나 논문 말미 각주에 사용한 도구, 모델 버전, 활용 범위(번역, 교정, 시각화 등)를 명백하게 서술하여야 함</li>
+                                <li><strong>허위 서지 날조(Hallucination)에 대한 연구 부정 제재:</strong> 인공지능이 날조한 가상의 학술지, 존재하지 않는 권호 및 쪽수를 직접 확인 없이 게재 논문에 포함한 경우 '연구 부정행위(위조 및 변조)'로 간주되어 최대 5년간 논문 투고 금지 조치를 받을 수 있음</li>
+                            </ul>
+                        </div>
+
+                        <div class="callout-box warning" style="margin-top: 1.25rem;">
+                            <div class="callout-icon" aria-hidden="true">⚖️</div>
+                            <div class="callout-body">
+                                <span class="callout-title">에코의 서지 검증 황금률 (Biblio-Integrity Rule)</span>
+                                <p style="margin-top: 4px; font-size: 0.95rem; line-height: 1.6;">
+                                    "인용은 재판에서 증언하는 것과 같습니다. 직접 보지 않은 1차 사료를 본 것처럼 속여 인용해서는 안 됩니다." (Umberto Eco, <em>Come si fa una tesi di laurea</em>, Cap. III &amp; Cap. V)<br>
+                                    학술지에 투고하는 모든 원고의 서지 정보는 연구자가 직접 눈으로 대조한 원전이어야 합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 플로팅 TOP 버튼 -->
+    <button id="back-to-top" class="floating-top-btn" title="페이지 상단으로 이동" aria-label="페이지 상단으로 이동">↑</button>
+
+    <!-- 푸터 -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>인류학도를 위한 학술지 규정 종합 포털</h3>
+                    <p>『한국문화인류학』(KCA) &amp; 『비교문화연구』(ICCS 2026) 공식 간행·절차·작성·윤리 규정집 (비영리 학술·교육 목적)</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">비교 매트릭스</a>
+                    <a href="kca.html">『한국문화인류학』 규정</a>
+                    <a href="iccs.html">『비교문화연구』 규정</a>
+                    <a href="ai-guidelines.html">대학 AI 가이드라인</a>
+                    <a href="converter.html">인용 변환기</a>
+                    <a href="checklist.html">체크리스트</a>
+                    <a href="specs.html">제작 환경 &amp; 명세</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <a href="https://kunwryu.github.io/" target="_blank" rel="noopener noreferrer" class="footer-author-link">Kun Wook Ryu</a> (Portal design &amp; code). all rights reserved.</p>
+                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    <span class="udl-conformance-badge">UDL 2025 framework &amp; WCAG 2.1 AA conformance</span>
+                    <span class="udl-conformance-badge" style="border-color: rgba(184, 74, 57, 0.4); color: var(--color-comp-coral);">🛡️ CRAWLER_SHIELD active (16종 AI 학습 봇 차단)</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 자바스크립트 -->
+    <script src="portal.js?v=20261028_1"></script>
+</body>
+</html>
+
